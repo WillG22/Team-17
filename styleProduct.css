@@ -44,7 +44,6 @@ p{
 }
 
 body{
-    margin: 0;
     width: 100%;
     background-color: #000000;
 }
@@ -53,7 +52,7 @@ body{
     display: flex;
     align-items: center ;
     justify-content: space-between;
-    padding: 20px 60px;   /* size of top banner */ 
+    padding: 20px 80px;   /* size of top banner */ 
     background-color: #1919198c  ;             /* color of top banner */ 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.238);
 }
@@ -117,7 +116,7 @@ body{
     flex: 1;
     border: 0;
     outline: none;
-    padding: 15px 10px;
+    padding: 24px 20px;
     font-size: 20px;
     color: #cac7ff;
 
@@ -219,98 +218,4 @@ padding: 10px 0;
     bottom: 20px;
     right: 10px;
 }
-
-/*
-    Burger menu styles
-*/
-
-  #burger-menu {
-    cursor: pointer;
-    height: 27px;
-    width: 27px;
-    margin: 50px;
-    overflow: visible;
-    position: relative;
-    z-index:2;
-  }
-  #burger-menu span,
-  #burger-menu span:before,
-  #burger-menu span:after {
-    background: #fff;
-    display: block;
-    height: 4px;
-    opacity: 1;
-    position: absolute;
-    transition: 0.3s ease-in-out;
-  }
-  #burger-menu span:before,
-  #burger-menu span:after {
-    content: "";
-  }
-  #burger-menu span {
-    right: 0px;
-    top: 13px;
-    width: 27px;
-  }
-  #burger-menu span:before {
-    left: 0px;
-    top: -10px;
-    width: 16px;
-  }
-  #burger-menu span:after {
-    left: 0px;
-    top: 10px;
-    width: 20px;
-  }
-  
-  #burger-menu.close span {
-    transform: rotate(-45deg);
-    top: 13px;
-    width: 27px;
-  }
-  #burger-menu.close span:before {
-    top: 0px;
-    transform: rotate(90deg);
-    width: 27px;
-  }
-  #burger-menu.close span:after {
-    top: 0px;
-    left:0;
-    transform: rotate(90deg);
-    opacity:0;
-    width:0;
-  }
-  
-  #menu{
-    z-index:1;
-    min-width:100%;
-    min-height:100%;
-    position: fixed;
-    top:0;
-    height:0;
-    visibility: hidden;
-    opacity: 0;
-    text-align:center;
-    padding-top:20px;
-    transition: all 0.3s ease-in-out;
-    
-  }
-  
-  #menu.overlay{
-    visibility: visible;
-    opacity: 1;
-    padding-top:100px;
-    background:rgba(0,0,0,0.5);
-  }
-  
-  #menu li{
-    list-style:none;
-  }
-  #menu a{
-    color:#fff;
-    display:block;
-    font-size: 32px;
-    margin-bottom:30px;
-    text-decoration:none;
-  }
 
