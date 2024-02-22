@@ -24,10 +24,10 @@ body {
   margin: 0 -16px;
 }
 
-/* .col-25 {
+.col-25 {
   -ms-flex: 25%;
   flex: 25%;
-} */
+}
 
 .col-50 {
   -ms-flex: 50%; /* IE10 */
