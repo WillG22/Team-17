@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact_us.css">
+</head>
+<header>
+    <div class="navbar">
+        <input type ="checkbox" name ="" id ="chk1">
+        <img class="logo" src="image/background.png">
+        <div class="search-box">
+            <form action="">
+            <input type="text" name="search" id="srch" placeholder="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <ul>
+            <li><a href="Explore_page.html">Home</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="#">Basket</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>        
+</header>
+
+   
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p>Feel free to contact us and we will get back to you ass sson as we can.</p>
+        <form action="mail.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject">
+            <label for="message">Message</label>
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send" >
+        </form>
+    </div>
