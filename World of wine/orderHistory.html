@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order History</title>
+        <link rel="stylesheet" href="Explore_page_style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <input type ="checkbox" name ="" id ="chk1">
+                <img class="logo" src="image/background.png">
+                <div class="search-box">
+                    <form action="">
+                    <input type="text" name="search" id="srch" placeholder="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="Explore_page.html">Home</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#">Basket</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <div class="menu">
+                    <label for="chk1">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                </div>        
+        </header>
+        <div class="banner">
+            <video autoplay loop muted plays-inline>
+                <source  src="image/Background_Video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="content">
+            <h1>Order History</h1>
+            <div>
+
+        <div class="order history">
+
+            </div>
+
+
+
+    </body>
+
+    <body>
+        <style>
+            .table-container {
+                margin: 0 auto; 
+                /*padding: 10%; */
+                width: 30%;
+            }
+
+            .selection-padding {
+                padding: 5%;
+            }
+
+        </style>
+        <div class="table-container">
+        <label for="number">Select order:</label>
+        <div class="selection-padding">
+        <select id="number" onchange="updateData()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        </div>
+    
+        <table border="1">
+            <tr>
+                <th>OrderID</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Price paid</th>
+            </tr>
+            <tr>
+                <td id="OrderID">1</td>
+                <td id="data1">Sample 1</td>
+                <td id="data2">Sample 1</td>
+                <td id="data3">Sample 1</td>
+                <td id="data4">Sample 1</td>
+            </tr>
+        </table>
+        </div>
+    
+        <script>
+            function updateData() {
+                var selectedNumber = document.getElementById("number").value;
+                document.getElementById("OrderID").innerText = selectedNumber;
+    
+                // Sample data needs to be integrated, this is a prototype
+                var sampleData = [
+                    { number: "1", data1: "Château Latour 2005", data2: 150, data3: 1, data4: 150 },
+                    { number: "2", data1: "Rock Angel Rosé 2021", data2: 70, data3: 2, data4: 140 },
+                    { number: "3", data1: "Climens (Missing Label) 1921", data2: 200, data3: 1, data4: 200 },
+                    { number: "4", data1: "Amour de Deutz 2002", data2: 175, data3: 4, data4: 700 }
+                ];
+    
+
+                var selectedData = sampleData.find(function(data) {
+                    return data.number === selectedNumber;
+                });
+    
+
+                document.getElementById("data1").innerText = selectedData.data1;
+                document.getElementById("data2").innerText = selectedData.data2;
+                document.getElementById("data3").innerText = selectedData.data3;
+                document.getElementById("data4").innerText = selectedData.data4;
+            }
+    
+
+            updateData();
+            
+        </script>
+    </body>
+</html>
